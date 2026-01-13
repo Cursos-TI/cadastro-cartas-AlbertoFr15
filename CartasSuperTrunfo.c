@@ -38,7 +38,9 @@ int main() {
 
 
     densidade1 = populacao1 / area1;
+    printf("A densidade do estado é: %.1f\n", densidade1);
     pibPerCapita1 = pib1 / populacao1;
+    printf("O Pib Per Capita é de: %.1f\n", pibPerCapita1);
         
     
     // ===== ENTRADA CARTA 2 =====
@@ -59,7 +61,9 @@ int main() {
     scanf("%d", &pontosTuristicos2);
 
     densidade2 = populacao2 / area2;
+    printf("A densidade do estado é: %.1f\n", densidade2);
     pibPerCapita2 = pib2 / populacao2;
+    printf("O Pib Per Capita é de: %.1f\n",pibPerCapita2);
 
     // ===== MENU DE ATRIBUTOS =====
     int atr1, atr2;
@@ -76,8 +80,8 @@ int main() {
 
     // Segundo menu dinâmico
     printf("\nEscolha o SEGUNDO atributo:\n");
-    for (int i = 1; i <= 5; i++) {
-        if (i != atr1) {
+    for (int i = 1; i <= 5; i++) {     //percorre os atributos de 1 a 5
+        if (i != atr1) {               //remove do menu o atributo já escolhido
             printf("%d - ", i);
             switch (i) {
                 case 1: printf("População\n"); break;
